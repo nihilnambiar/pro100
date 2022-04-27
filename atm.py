@@ -1,26 +1,20 @@
+
 class Atm (object):
-    def __init__(self,cardnumber,pinnumber,cashwithdrawl,balanceenquiry):
+    def __init__(self,cardnumber,pinnumber):
         self.cardnumber=cardnumber
-        self.pinnumber=company
         self.pinnumber=pinnumber
-        self.cashwithdrawl=cashwithdrawl
 
-    def cardnumber(self):
-        print("")
-
-    def pinnumber(self):
-        print("")
-
-    def cashwithdrawl(self):
-        print("5000")   
+    def cashwithdrawl(self,cash):
+        amount = 10000 - cash
+        print("You have withdrwan " + str(cash) + " you have balance "+ str(amount))   
 
     def balanceenquiry(self):
-        print("10,000")
+        print("You have balance 10,000")
 
-atm=object("101020,"991o2","money","1299o9")
-print(atm.cardnumber())
-print(atm.pinnumber())
-print(atm.cashwithdrawl())
-print(atm.balanceenquiry)
+atm = Atm("101020","991o2")
+print(atm.cardnumber)
+print(atm.pinnumber)
+print(atm.cashwithdrawl(200))
+print(atm.balanceenquiry())
 
 
